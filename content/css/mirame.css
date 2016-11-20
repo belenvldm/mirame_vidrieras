@@ -1,0 +1,465 @@
+/*..
+* https://www.belulopezdelmonte.com.ar
+* @Belu López del Monte
+..*/
+
+/*.. FUENTES ..*/
+@font-face {
+	font-family:nunito_bold;
+	src:url(fonts/Nunito-Bold.ttf);
+}
+
+@font-face {
+	font-family:nunito_light;
+	src:url(fonts/Nunito-Light.ttf);
+}
+
+@font-face {
+	font-family:nunito_regular;
+	src:url(fonts/Nunito-Regular.ttf);
+}
+
+/*.. GENERAL ..*/
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #ccaafd; /*rgba(201, 165, 253, 0.9)*/
+}
+
+body, a, p {
+	font-family: nunito_regular;
+}
+
+h1, h2, h3 {
+	font-family: nunito_bold;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#gral {
+	margin-top: 14%;
+	padding: 1%;
+}
+
+/*.. MENU ..*/
+#navbar {
+	background: #5b0984;
+	border-color: #440663;
+}
+
+.navbar-inverse .navbar-nav>li>a, ul.linkFooter li a {
+	color: #b7b6b6;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+	background: #440663;	
+}
+
+ul.dropdown-menu {
+    background: #8910c5;
+	border-color: #440663;
+}
+
+.dropdown-menu>li>a {
+	color: #b7b6b6;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+	background-color: transparent;
+	color: white;
+}
+
+/*.. FOOTER ..*/
+#footer {
+	background: #64218c;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	color: #b7b6b6;
+}
+
+/*ul.linkFooter li ul li {
+	padding: 0 6%;
+}*/
+
+.simplificado {
+	display: block;
+	text-align: center;
+}
+
+.simplificado .map {
+	display: none;
+}
+
+.ampliado {
+	display: none;
+	padding: 2% 0;
+	margin-bottom: 4%;
+}
+
+@media (min-width: 992px) {
+	.col-footer {
+	    width: 14%;
+	}
+}
+
+/*.. CANVAS ..*/
+#circle {
+	display: none;
+}
+
+/*---------------*/
+/*.. SECCIONES ..*/
+/*---------------*/
+
+/*.. HOME ..*/
+#logo {
+	margin-top: 1em;
+    width: 100%;
+    min-height: 12em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#logo span {
+	display: none;
+}
+
+div#titulo {
+    margin-top: 3em;
+    color: #6d0271;
+}
+
+div#titulo h2 {
+    font-size: 3em;
+}
+
+div#desc {
+    letter-spacing: 0.2em;
+    line-height: 1.2;
+    color: #a103a7;
+    font-size: 1.5em;
+    margin: 1%;
+}
+
+a#ver_mas {
+    color: #a403a7;
+    border: 1px solid #a403a7;
+    padding: 1% 2%;
+    position: absolute;
+    top: 2em;
+    left: 40%;
+}
+
+.sitemap {
+	display: none;
+}
+
+/*.. PROYECTOS ..*/
+#secciones {
+	background: rgba(223, 183, 253, 0.44); /*rgba(225, 204, 255, 0.22)*/
+}
+
+.titleCentral {
+        display: block;
+    width: 98%;
+    text-align: center;
+    color: #070995;
+    background: rgba(91, 109, 142, 0.18);
+    padding: 2% 0;
+    margin: 0 0 2% 1%;
+}
+
+div#posterVideo {
+    position: relative;
+    display: block;
+}
+
+div#posterVideo a .glyphicon-play {
+    position: absolute;
+    top: 38%;
+    left: 40%;
+    font-size: 4em;
+}
+
+div#videoProject {
+    display: none;
+}
+
+.videoInfo p {
+	margin-top: 2%;
+    padding: 2% 0;
+    color: #070967;
+}
+
+.galeria {
+	overflow-y: auto;
+	max-height: 30em;
+}
+
+a.linkImg {
+    display: block;
+    width: 100%;
+    height: 10em;
+    overflow: hidden;
+    margin: 2%;
+}
+
+a.linkImg:focus {
+	text-decoration: none;
+}
+
+.modal-content {
+	background: #bb5cf3;
+	border-radius: 0;
+}
+
+/*.. NOSOTROS ..*/
+section.titleSection {
+    margin: 4em 0 2em;
+}
+
+.gallerySection {
+    padding: 11% 2%;
+}
+
+.carousel-inner {
+    min-height: 12em;
+    max-height: 12em;
+}
+
+a.imgPrev, a.imgNext {
+    position: absolute;
+    top: 50%;
+}
+
+a.imgNext {
+    right: 10%;
+}
+
+a.imgPrev {
+    left: 10%;
+}
+
+/*.. COMENCEMOS ..*/
+#guia {
+	margin: 2em auto;
+}
+
+#preguntas, #preguntas2 {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	.carousel-indicators {
+	    bottom: 0.6em; 
+	}
+}
+
+@media (min-width: 768px) {
+	#gral {
+		margin-top: 5%;
+	}
+
+	#logo {
+		margin: 3em auto 0;
+		width: 70%;
+	}
+
+	div#titulo {
+    	margin-top: 10em;
+	}
+
+	a#ver_mas {
+		top: 4em;
+	}
+
+	div#desc {
+    	letter-spacing: 0.4em;
+    	line-height: 1.4;
+	}
+
+	.simplificado .map {
+		display: block;
+	}
+
+	.sitemap {
+		display: block;
+	}
+
+	.modal-dialog {
+		width: 50%;
+	}
+
+	.carousel-inner {
+    	min-height: 16em;
+    	max-height: 16em;
+    }
+}
+
+/*.. DESKTOP ..*/
+@media screen and (min-width:64em) {
+	#gral {
+	    margin-top: 3%;
+	}
+
+	#wrap {
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	#circle {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: rgba(201, 165, 253, 0.2);
+	}
+
+	.navbar-nav {	    
+	    margin: 0 0 0 8%;
+	}
+
+	#logo {
+		margin: 2em 0 0;
+	}
+
+	div#videoProject {
+	    display: block;
+	}
+
+	a#ver_mas {
+		top: 8em;
+	}
+
+	div#posterVideo {
+	    display: none;
+	}
+}
+
+/*
+ _ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __
+|														   |
+|							ADMIN 						   |
+|_ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __ __|
+*/
+
+/*.. INDEX ADMIN ..*/
+form#loguin {
+    margin: 8em 0 4em;
+}
+
+.gralAdmin {
+    padding: 0 2.3% 2% !important;
+}
+
+.page-header {
+    border: none;
+    color: #3d0584;
+}
+
+.opcionesAd {
+    background: #b792ef; /*#bb5cf3*/
+    padding: 2% 4%;
+    box-shadow: 0.1em 0.1em 3px #9163ad;
+    margin-bottom: 1em;
+}
+
+.opcionesAd a {
+    color: #232323;
+}
+
+.opcionesAd h4 {
+    color: #3d0584;
+}
+
+a.btn-elim {
+    color: #b31588; /*#322d35*/
+}
+
+a.btn.btn-primary.btn-md {
+    margin: 0 2%;
+}
+
+a.btn-success {
+    background-color: #9c5cb8;
+    border-color: #9d5eb9;
+}
+
+a.btn-success.focus, a.btn-success:focus, a.btn-success.active.focus, a.btn-success.active:focus, a.btn-success.active:hover, a.btn-success.active, a.btn-success:active, a.btn-success:active.focus, a.btn-success:active:focus, a.btn-success:hover, a.btn-success:active:hover {
+    background-color: #844e9c;
+    border-color: #683d7b;
+}
+
+p.txt_project {
+    min-height: 10em;
+}
+
+p.txt_project {
+    min-height: 10em;
+}
+
+.verPro, .verHome, .verContent {
+    box-shadow: 0em 0em 0.3em #b99ae6;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 1% 0;
+    background: #c5a9ef;
+    color: #403f3f;
+}
+
+.verPro h4 {
+    color: #3d0584;
+}
+
+#logoImg {
+	display: inline-block;
+    width: auto;
+    height: 20%;
+}
+
+.tituloSeccionHome {
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    margin: 3% 0 1%;
+}
+
+.linkMod {
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.verContent {
+	margin: 1% 10%;
+}
+
+.linkMod a.btn-success {
+    margin-left: 1.5%;
+}
+
+@media (min-width: 992px) {
+	.verPro, .verHome {
+	    padding: 1%;
+	    margin: 1%;
+	    min-width: 30%;
+	}
+}
