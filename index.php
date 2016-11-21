@@ -45,7 +45,7 @@
 		    </div>
 	  	</div>
 	</nav>
-
+	<?php require_once("admin/codes/ver_home.php"); ?>
 	<div class="container">
 		<div id="gral" class="row">
 			<div class="col-xs-12 col-sm-12 col-md-6">
@@ -54,7 +54,7 @@
 						<div id="logo">
 							<h1>
 								<a href="index.php">
-									<span>mirame</span>
+									<span><?php echo $tituloLogo; ?></span>
 								</a>
 							</h1>
 						</div>
@@ -64,20 +64,19 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12">
 						<div id="titulo">
-							<h2>Vidrieras interactivas</h2>
+							<h2><?php echo $titulo; ?></h2>
 						</div>
 						<div id="desc">
-							<p>Agencia dedicada a la creación, diseño e instalación de pantallas interactivas</p>
+							<p><?php echo $desc; ?></p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6">
+			<!-- <div class="col-xs-12 col-sm-12 col-md-6">
 				<a id="ver_mas" href="content/secciones/proyectos.php">ver mas</a>
-			</div>
+			</div> -->
 		</div>
 	</div>
-	<?php @require 'content/secciones/home.php'; ?>
 	<footer id="footer" class="container-fluid">
 		<div class="row">
 			<div class="simplificado">
@@ -108,5 +107,11 @@
 	<script type="text/javascript" src="content/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="content/js/mirame.js"></script>
 	<script type="text/javascript" src="content/js/mouseCircle.js"></script>
+	<script>
+		$logoImg = "<?php echo $logo; ?>";
+		$(document).ready(function() {
+			$("#logo").css('background-image', 'url('+ $logoImg +')');
+		});
+	</script>
 </body>
 </html>

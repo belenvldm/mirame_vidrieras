@@ -1,6 +1,7 @@
 <?php
 	// traigo el codigo de conexion
-	@require "../codes/conectar_base.php";
+	$root = realpath($_SERVER["DOCUMENT_ROOT"]);
+	require_once("$root/admin/codes/conectar_base.php");
 	// instancio conexion
 	$conexion = new conexion;
 	// asigno la propiedad
